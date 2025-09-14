@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background: rgb(42, 186, 129);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+}
+
+.pic{
+    flex: 1;
+    text-align: center;
+    /* margin-top: 10px; */
+    /* background: #000; */
+    
+}
+ img{
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.link{
+    flex: 3;
+    text-decoration: none;
+    color: white;
+    /* background: #c37575; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ 
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+   
+   
+}
+nav a:hover{
+    text-decoration: underline;
+}
+/* main{
+    padding: 20px;
+} */
+.full-top{
+    width: 100%;
+    height: 500px;
+    background: url(/img/table.png) no-repeat center center/cover;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.full-top h2{
+   padding: 100px 0px 0px 100px;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+.full-top p{
+    padding: 0px 0px 0px 100px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.full-top button{
+    padding: 12px 64px;
+    background: #dd7a1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 100px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.full-top button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.full-top button:hover{
+    background: #79d779;
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+
+.quote{
+     background: #d4efe6;
+    color: rgb(10, 14, 8);
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0px 20px 0px 20px;
+    
+    margin-top: 60px;
+    position: relative;
+}
+.quote p{
+    font-style: italic;
+    font-size: 1em;
+}
+.four-btn{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 20px 50px 20px;
+}
+.four-btn button{
+    padding: 120px 150px;
+    /* background: #008000; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.first{
+    
+    background: url(/img/f.png) no-repeat center center/cover;
+}
+.first:hover{
+    background-image: url(/img/ff-pic.png);
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+.second:hover{
+    background-image: url(/img/pa.png);
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+.third:hover{
+    background-image: url(/img/bana.png);
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+.fourth:hover{
+    background-image: url(/img/le.png);
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+
+.first a,.second a,.third a{
+    
+    font-weight: bold;
+   
+}
+.second{
+    background: url(/img/PAPA.png) no-repeat center center/cover;
+}
+.third{
+    background: url(/img/ba.png) no-repeat center center/cover;
+}
+.fourth{
+    background: url(/img/lemon.png) no-repeat center center/cover;
+}
+
+.four-btn button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.info{
+    text-align: center;
+    /* padding: 120px; */
+   margin: 0px 20px 60px 20px;
+    /* background: #d38282; */
+    display: flex;
+}
+.info p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    
+}
+.one{
+    flex: 1;
+    background-image: url(/img/ii.png);
+    background-size: cover;
+    background-position: center;
+    height: 350px; 
+}
+/* .one:hover{
+    transform: scale(1.02);
+    transition: transform 0.5s;
+} */
+
+/* two-------------------------- */
+
+.two {
+  flex: 2;
+  position: relative;
+  height: 350px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden; /* prevent blur overflow */
+}
+
+.two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/photo_2025-04-06_22-55-13.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); 
+  z-index: -1; 
+}
+
+.two .content {
+  position: relative;
+  z-index: 1; 
+  color: white; 
+}
+
+.two p{
+    color: white;
+    padding: 100px 50px 100px 50px;
+    text-align: left;
+    font-size: 1.2em;
+}
+.two button{
+    padding: 12px 64px;
+    background: #e2bd34;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin: auto 100px 50px 0px;
+    border-radius: 8px;
+    transition: background 0.3s;
+
+}
+.two button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.two button:hover{
+    background: #79d779;
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+
+
+
+
+.three-btn{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px 50px 0px;
+}
+.three-btn button{
+    padding: 120px 40px;
+    /* background: #008000; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.three-btn button:hover{
+    /* background: #79d779; */
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+.three-btn button p{
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+.btn1 {
+    background: url(/img/any.png) no-repeat center center/cover;
+   
+}
+.hover-box {
+  position: relative;
+  display: inline-block;
+  padding: 20px 190px;
+  width:auto ;
+  cursor: pointer;
+}
+
+.hover-text {
+  display: none; /* hidden by default */
+  position: absolute;
+  color: white;
+  border-radius: 4px;
+  width: 120%;
+  height: 39vh;
+  font-size: 1.1em;
+ margin-top: 20;
+}
+.hover-box:hover .hover-text {
+  display: block; /* show on hover */
+  transform: translate(-50%, -50%);
+  background: rgba(142, 140, 140, 0.6); /* semi-transparent background */
+  text-align: center;
+
+}
+
+.act h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+
+
+
+.btn2{
+    background: url(/img/care.png) no-repeat center center/cover;
+}
+.btn3{
+    background: url(/img/service.png) no-repeat center center/cover;
+}
+/* footer---------------------------------- */
+footer{
+     background: rgb(42, 186, 129);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    height: auto;
+   
+}
+.foot-top{
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+footer p{
+    margin: 0;
+    width: 400px;
+    padding: 5px ;
+    line-height: 1.6;
+}
+.useful{
+    text-align: left;
+}
+.useful h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.useful ul{
+    list-style: none;
+    padding: 0;
+}
+.useful li{
+    margin-bottom: 10px;
+}
+.useful a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.useful a:hover{
+    text-decoration: underline;
+}
+.payment{
+    text-align: left;
+    gap: 10px;
+}
+.payment h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.payment img{
+    
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+    margin: 10PX;
+    border-radius: 20px;
+}
+.payment img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+hr{
+    border: 1px solid white;
+    margin: 10px 0;
+}
+.foot-button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.foot-buttom{
+    margin-top: 10px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.foot-buttom p{
+    width:auto ;
+    padding: 5px ;
+}
+.foot-buttom a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.foot-buttom a:hover{
+    text-decoration: underline;
+}
+
+

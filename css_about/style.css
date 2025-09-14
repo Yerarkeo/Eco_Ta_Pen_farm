@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background: rgba(139, 219, 187, 0.859);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+}
+
+.pic{
+    flex: 1;
+    text-align: center;
+    /* margin-top: 10px; */
+    /* background: #000; */
+    
+}
+ img{
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.link{
+    flex: 3;
+    text-decoration: none;
+    color: white;
+    /* background: #c37575; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ 
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    
+}
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(42, 186, 128, 0.037); 
+    justify-content: flex-end; 
+    padding: 10px 20px;
+    z-index: 1000; 
+    margin-top: 30px;
+    
+ }       
+nav a{
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+   
+   
+}
+nav a:hover{
+    text-decoration: underline;
+}
+/* main{
+    padding: 20px;
+} */
+.full-top{
+    width: 100%;
+    height: 500px;
+    background: url(/img/le.png) no-repeat center center/cover;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.full-top h2{
+   padding: 200px 0px 0px 100px;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+.full-top p{
+    padding: 130px 0px 0px 1200px;
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    
+}
+.full-top a{
+    color: white;
+    text-decoration: none;
+}
+.full-top a:hover{
+    text-decoration: underline;
+}
+.about h2{
+    color: rgb(230, 86, 25);
+    
+}
+.owner-mission{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    /* background: #ab6c6c; */
+    flex-direction: row;
+    height: 350px;
+}
+.owner {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url(/img/owner.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+.owner:hover{
+     transform: scale(1.02);
+    transition: transform 0.5s;
+
+}
+.mission{
+     flex: 2;
+    padding: 20px;
+    color: black;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(213, 237, 213);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.mission hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+.mission :hover{
+    text-decoration: underline;
+  
+
+}
+
+
+.mis{
+    flex:1;
+    /* background: yellow; */
+    width: 100%;height: 50%;
+    
+}
+.val{
+    flex: 1;
+    /* background: red; */
+    width: 100%;    height: 50%;
+}
+.about{
+    /* background: #ab6c6c; */
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.6;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+.diferent{
+    /* background: rgb(213, 237, 213); */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.diferent h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.diferent p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.diferent button{
+    display: flex;
+    flex-direction: row;
+    padding: 110px 160px;
+    /* background: rgb(42, 186, 129); */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.active:hover{
+    background-image: url(/img/frui.png);
+    background-size: cover;
+    background-position: center;
+     transform: scale(1.02);
+    transition: transform 0.5s;
+}
+.active1:hover{
+    background-image: url(/img/flow.png);
+    background-size: cover;
+    background-position: center;
+     transform: scale(1.02);
+    transition: transform 0.5s;
+}
+.active2:hover{
+    background-image: url(/img/checken.png);
+    background-size: cover;
+    background-position: center;
+     transform: scale(1.02);
+    transition: transform 0.5s;
+}
+.but{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.but a{
+    text-decoration: none;
+    color: white;
+}
+.but a:hover{
+    text-decoration: underline;
+}
+.active{
+    background-image: url(/img/g-fruits.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.active1{
+    background-image: url(/img/flowers.png);
+    background-size: cover;
+    background-position: center;
+}
+.active2{
+    background-image: url(/img/chickens.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.two-but{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 30px;
+}
+.two-but button{
+    padding: 128px 256px;
+    /* background: rgb(42, 186, 129); */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.but1 button:hover{
+    background-image: url(/img/sm-gar.png);
+    background-size: cover;
+    background-position: center;
+     transform: scale(1.02);
+    transition: transform 0.5s;
+}
+.but2 button:hover{
+    background-image: url(/img/photo_2025-06-21_13-27-02.jpg);
+    background-size: cover;
+    background-position: center;
+     transform: scale(1.02);
+    transition: transform 0.5s;
+}
+
+
+.two-but a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+
+    
+}
+.two-but a:hover{
+    text-decoration: underline;
+}
+.but1 button{
+    background-image: url(/img/gar.png);
+    background-size: cover;
+    background-position: center;
+}
+.but2 button{
+    background-image: url(/img/act.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.review{
+    background: rgb(241, 244, 241);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 32px;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;            /* Align items in a row */
+  gap: 16px;                /* Space between items */
+  overflow-x: auto;         /* Enable horizontal scrolling */          /* Optional padding */
+  white-space: nowrap;      /* Prevent items from wrapping */
+ 
+}
+.review::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+}
+
+.review h2{
+   text-align: center;
+    margin-bottom: 20px;
+  
+}
+
+.review button p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    width: 20%;
+}
+
+.review button{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background: rgb(219, 159, 70);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+   
+    
+}
+
+.review button:hover{
+    background: rgb(202, 207, 144);
+     transform: scale(1.02);
+    transition: transform 0.5s;
+}
+.review p{
+    margin-bottom: 20px;
+    width: 50%;
+}
+.small-but{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.small-but h3{
+    margin-right: 20px;
+}
+
+.small-but a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: rgb(42, 186, 129);
+    border-radius: 5px;
+}
+.small-but a:hover{
+    background: rgb(30, 136, 99);
+}
+/* footer---------------------------------- */
+footer{
+     background: rgb(42, 186, 129);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    height: auto;
+   
+}
+.foot-top{
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+footer p{
+    margin: 0;
+    width: 400px;
+    padding: 5px ;
+    line-height: 1.6;
+}
+.useful{
+    text-align: left;
+}
+.useful h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.useful ul{
+    list-style: none;
+    padding: 0;
+}
+.useful li{
+    margin-bottom: 10px;
+}
+.useful a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.useful a:hover{
+    text-decoration: underline;
+}
+.payment{
+    text-align: left;
+    gap: 10px;
+}
+.payment h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.payment img{
+    
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+    margin: 10PX;
+    border-radius: 20px;
+}
+.payment img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+hr{
+    border: 1px solid white;
+    margin: 10px 0;
+}
+.foot-button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.foot-buttom{
+    margin-top: 10px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.foot-buttom p{
+    width:auto ;
+    padding: 5px ;
+}
+.foot-buttom a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.foot-buttom a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
