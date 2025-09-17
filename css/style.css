@@ -83,7 +83,6 @@ nav a:hover{
     margin-bottom: 20px;
 }
 .full-top button{
-    padding: 12px 64px;
     background: #dd7a1e;
     color: white;
     border: none;
@@ -91,14 +90,31 @@ nav a:hover{
     font-size: 1em;
     margin-left: 100px;
     border-radius: 8px;
-    transition: background 0.3s;
+    display: block; /* Makes button full-width */
+    width: 100%; /* Fills container */
+    max-width: 200px; /* Limits button width */
+    padding: 12px; /* Adjusted padding */
+    transition: background 0.3s ease,
+    transform 0.3s ease; /* Smooth transitions */
 }
+
 
 .full-top button a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 6px;
+    border-radius: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: block; /* Ensures link fills button */
 }
+.full-top button a:hover{
+    opacity: 0.8;
+}
+
 .full-top button:hover{
     background: #79d779;
     transform: scale(1.02);
@@ -257,19 +273,35 @@ nav a:hover{
     margin: auto 100px 50px 0px;
     border-radius: 8px;
     transition: background 0.3s;
-
+    display: block; /* Makes button full-width */
+    width: 100%; /* Fills container */
+    max-width: 200px; /* Limits button width */
+    padding: 12px; /* Adjusted padding */
+    transform 0.3s ease; /* Smooth transitions */
 }
 .two button a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+   padding: 6px;
+    border-radius: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: block; /* Ensures link fills button */
 }
 .two button:hover{
-    background: #79d779;
+    background: #8de98d;
     transform: scale(1.02);
     transition: transform 0.5s;
 
 }
+
+.two button a:hover{
+    opacity: 0.8;
+}
+
 
 
 
