@@ -158,6 +158,10 @@ a:hover{
      transform: scale(1.02);
     transition: transform 0.5s;
 }
+.but-card a{
+    font-size: 1em;
+    display: inline-block;
+}
 .pro-card{
     background: none;
     border-radius: 12px;
