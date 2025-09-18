@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-.container {
+#container ,#con{
     max-width: 800px;
     margin: auto;
     background-color: #fff;
