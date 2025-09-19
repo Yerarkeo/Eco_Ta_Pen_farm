@@ -4,19 +4,15 @@
     font-family: sans-serif;
 }
 header{
-    background: rgb(42, 186, 129);
+    background: rgba(139, 219, 187, 0.859);
     color: white;
     padding: 10px 0;
     text-align: center;
     display: flex;
 }
-
 .pic{
     flex: 1;
-    text-align: center;
-    /* margin-top: 10px; */
-    /* background: #000; */
-    
+    text-align: center; 
 }
  img{
     width: 170px;
@@ -32,30 +28,34 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
- 
 }
 nav ul{
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    
+    margin-right: 40px;
 }
 nav{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    
-    
-}
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(42, 186, 128, 0.037); 
+    justify-content: flex-end; 
+    padding: 10px 20px;
+    z-index: 1000; 
+    margin-top: 30px; 
+ }       
 nav a{
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
-    text-decoration: none;
-   
-   
+    text-decoration: none;  
 }
 nav a:hover{
     text-decoration: underline;
@@ -63,14 +63,16 @@ nav a:hover{
 /* main{
     padding: 20px;
 } */
-.full-top{
+.full-top {
     width: 100%;
-    height: 500px;
-    background: url(/img/table.png) no-repeat center center/cover;
+    height: 600px;
+    background: 
+        linear-gradient(rgba(181, 153, 110, 0.5), rgba(0,0,0,0.5)), 
+        url(/img/table.png) no-repeat center center/cover;
     margin-bottom: 20px;
     color: white;
+    filter: blur(0px); /* blur image if needed */
 }
-
 .full-top h2{
    padding: 100px 0px 0px 100px;
     margin-bottom: 20px;
@@ -97,8 +99,6 @@ nav a:hover{
     transition: background 0.3s ease,
     transform 0.3s ease; /* Smooth transitions */
 }
-
-
 .full-top button a{
     text-decoration: none;
     color: white;
@@ -114,14 +114,11 @@ nav a:hover{
 .full-top button a:hover{
     opacity: 0.8;
 }
-
 .full-top button:hover{
     background: #79d779;
     transform: scale(1.02);
     transition: transform 0.5s;
-
 }
-
 .quote{
      background: #d4efe6;
     color: rgb(10, 14, 8);
@@ -152,38 +149,31 @@ nav a:hover{
     transition: background 0.3s;
 }
 .first{
-    
     background: url(/img/f.png) no-repeat center center/cover;
 }
 .first:hover{
     background-image: url(/img/ff-pic.png);
     transform: scale(1.02);
     transition: transform 0.5s;
-
 }
 .second:hover{
     background-image: url(/img/pa.png);
     transform: scale(1.02);
     transition: transform 0.5s;
-
 }
 .third:hover{
     background-image: url(/img/bana.png);
     transform: scale(1.02);
     transition: transform 0.5s;
-
 }
 .fourth:hover{
     background-image: url(/img/le.png);
     transform: scale(1.02);
     transition: transform 0.5s;
-
 }
 
-.first a,.second a,.third a{
-    
-    font-weight: bold;
-   
+.first a,.second a,.third a{  
+    font-weight: bold; 
 }
 .second{
     background: url(/img/PAPA.png) no-repeat center center/cover;
@@ -194,13 +184,11 @@ nav a:hover{
 .fourth{
     background: url(/img/lemon.png) no-repeat center center/cover;
 }
-
 .four-btn button a{
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-
 .info{
     text-align: center;
     /* padding: 120px; */
@@ -211,7 +199,6 @@ nav a:hover{
 .info p{
     font-size: 1.2em;
     line-height: 1.6;
-    
 }
 .one{
     flex: 1;
@@ -220,13 +207,7 @@ nav a:hover{
     background-position: center;
     height: 350px; 
 }
-/* .one:hover{
-    transform: scale(1.02);
-    transition: transform 0.5s;
-} */
-
 /* two-------------------------- */
-
 .two {
   flex: 2;
   position: relative;
@@ -236,7 +217,6 @@ nav a:hover{
   align-items: center;
   overflow: hidden; /* prevent blur overflow */
 }
-
 .two::before {
   content: "";
   position: absolute;
@@ -250,13 +230,11 @@ nav a:hover{
   filter: blur(5px); 
   z-index: -1; 
 }
-
 .two .content {
   position: relative;
   z-index: 1; 
   color: white; 
 }
-
 .two p{
     color: white;
     padding: 100px 50px 100px 50px;
@@ -295,17 +273,10 @@ nav a:hover{
     background: #8de98d;
     transform: scale(1.02);
     transition: transform 0.5s;
-
 }
-
 .two button a:hover{
     opacity: 0.8;
 }
-
-
-
-
-
 .three-btn{
     display: flex;
     justify-content: space-around;
@@ -325,7 +296,6 @@ nav a:hover{
     /* background: #79d779; */
     transform: scale(1.02);
     transition: transform 0.5s;
-
 }
 .three-btn button p{
     font-weight: bold;
@@ -334,7 +304,6 @@ nav a:hover{
 }
 .btn1 {
     background: url(/img/any.png) no-repeat center center/cover;
-   
 }
 .hover-box {
   position: relative;
@@ -343,7 +312,6 @@ nav a:hover{
   width:auto ;
   cursor: pointer;
 }
-
 .hover-text {
   display: none; /* hidden by default */
   position: absolute;
@@ -359,20 +327,13 @@ nav a:hover{
   transform: translate(-50%, -50%);
   background: rgba(142, 140, 140, 0.6); /* semi-transparent background */
   text-align: center;
-
 }
-
 .act h1{
     font-size: 2em;
     margin-bottom: 20px;
     margin-top: 40px;
     text-align: center;
-
 }
-
-
-
-
 .btn2{
     background: url(/img/care.png) no-repeat center center/cover;
 }
@@ -387,17 +348,13 @@ footer{
     padding: 10px 0;
     margin-top: 20px;
     height: auto;
-   
 }
 .foot-top{
     margin-bottom: 10px;
     font-size: 1em;
     display: flex;
     justify-content: space-evenly;
-
 }
-
-
 footer p{
     margin: 0;
     width: 400px;
@@ -423,7 +380,6 @@ footer p{
     text-decoration: none;
     list-style: none;
 }
-
 .useful a:hover{
     text-decoration: underline;
 }
@@ -436,7 +392,6 @@ footer p{
     margin-bottom: 10px;
 }
 .payment img{
-    
     width: 50px;
     height: auto;
     margin-right: 10px;
@@ -479,6 +434,269 @@ hr{
 }
 .foot-buttom a:hover{
     text-decoration: underline;
+}
+/* -------- Phone (min-width:320px) and (max-width:767px) -------- */
+@media(min-width:320px) and (max-width:767px) {
+header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    height: 40vh;
+  }
+
+  .pic img {
+    width: 120px; /* smaller logo for phone */
+  }
+  nav{
+    margin: 80px 0px 0px 0px;
+    align-items: center;
+    padding: 10px 0px 0px 9px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    align-items: center;
+    
+  }
+
+  .link a {
+    font-size:1.3em;
+  }
+  .full-top h2{
+    padding: 50px 0px 0px 10px;
+    text-align: center;
+  }
+  .full-top p{
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+  }
+  .full-top button{
+    margin: 60px 0px 0px 100px;
+  }
+  .four-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .four-btn button{
+    text-align: center;
+  }
+  .info{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    height: 90vh;
+    border-radius: 12px;
+  }
+  .one{
+    flex: 1;
+    border-radius: 12px;
+  }
+  .two{
+    flex: 2;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .info p{
+    font-size: 1.1em;
+    width: 90%;
+    text-align: center;
+    
+  }
+  .info button{
+    align-items: center;
+    margin: 0px 0px 40px 0px;
+  }
+  .three-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .three-btn button{
+    padding: 90px 0px ;
+    margin: 0px 0px 0px 20px ;
+    width: 90%;
+  }
+  .hover-box span{
+     text-align: center;
+     font-size: 0.9em;
+     width:70%;
+     height: 30vh;
+     padding: 0px 50px 0px 0px ;
+     
+  }
+  footer {
+     font-size: 1em;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+  }
+  footer p{
+    width: 90%;
+  }
+  .foot-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .foot-top h3{
+    text-align: center;
+  }
+  .useful{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    
+  }
+  .payment{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .foot-buttom{
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Teblet(min-width: 768px) and (max-width: 1024px)  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    height: 20vh;
+  }
+
+  .pic img {
+    width: 150px; /* smaller logo for phone */
+  }
+  nav{
+    margin: 80px 0px 0px 0px;
+    align-items: center;
+    padding: 40px 0px 0px 9px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 12px;
+    padding: 0;
+    align-items: center;
+    
+  }
+
+  .link a {
+    font-size:1.5em;
+  }
+  .full-top h2{
+    padding: 50px 0px 0px 10px;
+    text-align: center;
+  }
+  .full-top p{
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .full-top button{
+    margin: 60px 0px 0px 100px;
+  }
+  .four-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .four-btn button{
+    text-align: center;
+  }
+  .info{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    height: 90vh;
+    border-radius: 12px;
+  }
+  .one{
+    flex: 1;
+    border-radius: 12px;
+  }
+  .two{
+    flex: 2;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .info p{
+    font-size: 1.1em;
+    width: 90%;
+    text-align: center;
+    
+  }
+  .info button{
+    align-items: center;
+    margin: 0px 0px 40px 0px;
+  }
+  .three-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .three-btn button{
+    padding: 90px 0px ;
+    margin: 0px 0px 0px 20px ;
+    width: 95%;
+  }
+  .hover-box span{
+     text-align: center;
+     font-size: 0.9em;
+     width:70%;
+     height: 30vh;
+     padding: 0px 50px 0px 0px ;
+     
+  }
+  footer {
+     font-size: 1.4em;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+  }
+  footer p{
+    width: 90%;
+    margin-left: 20px;
+  }
+  .foot-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .foot-top h3{
+    text-align: center;
+  }
+  .useful{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    
+  }
+  .payment{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .foot-buttom{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 

@@ -10,13 +10,9 @@ header{
     text-align: center;
     display: flex;
 }
-
 .pic{
     flex: 1;
-    text-align: center;
-    /* margin-top: 10px; */
-    /* background: #000; */
-    
+    text-align: center; 
 }
  img{
     width: 170px;
@@ -32,7 +28,6 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
- 
 }
 nav ul{
     list-style: none;
@@ -40,7 +35,6 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     margin-right: 40px;
-    
 }
 nav{
     margin-top: 10px;
@@ -54,17 +48,14 @@ nav{
     justify-content: flex-end; 
     padding: 10px 20px;
     z-index: 1000; 
-    margin-top: 30px;
-    
+    margin-top: 30px; 
  }       
 nav a{
     color: black;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
-    text-decoration: none;
-   
-   
+    text-decoration: none;  
 }
 nav a:hover{
     text-decoration: underline;
@@ -72,14 +63,16 @@ nav a:hover{
 /* main{
     padding: 20px;
 } */
-.full-top{
+.full-top {
     width: 100%;
-    height: 500px;
-    background: url(/img/le.png) no-repeat center center/cover;
+    height: 600px;
+    background: 
+        linear-gradient(rgba(128, 155, 95, 0.5), rgba(0,0,0,0.5)), 
+        url(/img/le.png) no-repeat center center/cover;
     margin-bottom: 20px;
     color: white;
+    filter: blur(0px); /* blur image if needed */
 }
-
 .full-top h2{
    padding: 200px 0px 0px 100px;
     margin-bottom: 20px;
@@ -89,8 +82,7 @@ nav a:hover{
     padding: 130px 0px 0px 1200px;
     font-size: 1.5em;
     line-height: 1.6;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
 }
 .full-top a{
     color: white;
@@ -100,8 +92,7 @@ nav a:hover{
     text-decoration: underline;
 }
 .about h2{
-    color: rgb(230, 86, 25);
-    
+    color: rgb(230, 86, 25);  
 }
 .owner-mission{
     padding: 20px;
@@ -123,13 +114,10 @@ nav a:hover{
     background-image: url(/img/owner.png);
     background-size: cover;
     background-position: center;
-
-
 }
 .owner:hover{
      transform: scale(1.02);
     transition: transform 0.5s;
-
 }
 .mission{
      flex: 2;
@@ -144,8 +132,6 @@ nav a:hover{
     gap: 20px;
     display: flex;
     flex-direction: column;
-    
-
 }
 .mission hr{
     border: 0;
@@ -155,16 +141,11 @@ nav a:hover{
 }
 .mission :hover{
     text-decoration: underline;
-  
-
 }
-
-
 .mis{
     flex:1;
     /* background: yellow; */
-    width: 100%;height: 50%;
-    
+    width: 100%;height: 50%;  
 }
 .val{
     flex: 1;
@@ -209,8 +190,6 @@ nav a:hover{
     transition: background 0.3s ease,
     transform 0.3s ease; /* Smooth transitions */
 }
-
-
 .active:hover{
     background-image: url(/img/frui.png);
     background-size: cover;
@@ -248,8 +227,7 @@ nav a:hover{
 .active{
     background-image: url(/img/g-fruits.png);
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;  
 }
 .active1{
     background-image: url(/img/flowers.png);
@@ -261,8 +239,6 @@ nav a:hover{
     background-size: cover;
     background-position: center;
 }
-
-
 .two-but{
     display: flex;
     justify-content: space-evenly;
@@ -290,15 +266,11 @@ nav a:hover{
      transform: scale(1.02);
     transition: transform 0.5s;
 }
-
-
 .two-but a{
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
-
-    
 }
 .two-but a:hover{
     text-decoration: underline;
@@ -313,8 +285,6 @@ nav a:hover{
     background-size: cover;
     background-position: center;
 }
-
-
 .review{
     background: rgb(241, 244, 241);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -325,25 +295,20 @@ nav a:hover{
   gap: 16px;                /* Space between items */
   overflow-x: auto;         /* Enable horizontal scrolling */          /* Optional padding */
   white-space: nowrap;      /* Prevent items from wrapping */
- 
 }
 .review::-webkit-scrollbar {
     height: 8px; /* Height of the scrollbar */
 }
-
 .review h2{
    text-align: center;
-    margin-bottom: 20px;
-  
+    margin-bottom: 20px;  
 }
-
 .review button p{
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.2em;
     width: 20%;
 }
-
 .review button{
     display: flex;
     flex-direction: column;
@@ -352,11 +317,8 @@ nav a:hover{
     color: black;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
-   
-    
+    margin-top: 20px; 
 }
-
 .review button:hover{
     background: rgb(202, 207, 144);
      transform: scale(1.02);
@@ -376,7 +338,6 @@ nav a:hover{
 .small-but h3{
     margin-right: 20px;
 }
-
 .small-but a{
     text-decoration: none;
     color: white;
@@ -395,17 +356,13 @@ footer{
     padding: 10px 0;
     margin-top: 20px;
     height: auto;
-   
 }
 .foot-top{
     margin-bottom: 10px;
     font-size: 1em;
     display: flex;
     justify-content: space-evenly;
-
 }
-
-
 footer p{
     margin: 0;
     width: 400px;
@@ -431,7 +388,6 @@ footer p{
     text-decoration: none;
     list-style: none;
 }
-
 .useful a:hover{
     text-decoration: underline;
 }
@@ -444,7 +400,6 @@ footer p{
     margin-bottom: 10px;
 }
 .payment img{
-    
     width: 50px;
     height: auto;
     margin-right: 10px;

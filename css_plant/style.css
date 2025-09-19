@@ -10,13 +10,9 @@ header{
     text-align: center;
     display: flex;
 }
-
 .pic{
     flex: 1;
     text-align: center;
-    /* margin-top: 10px; */
-    /* background: #000; */
-    
 }
  img{
     width: 170px;
@@ -32,15 +28,13 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
- 
 }
 nav ul{
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
-    
+    margin-right: 40px; 
 }
 nav{
     margin-top: 10px;
@@ -55,16 +49,13 @@ nav{
     padding: 10px 20px;
     z-index: 1000; 
     margin-top: 30px;
-    
- }       
+}       
 a{
     color: black;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
     text-decoration: none;
-   
-   
 }
 a:hover{
     text-decoration: underline;
@@ -72,15 +63,16 @@ a:hover{
 /* main{
     padding: 20px;
 } */
-.full-top{
+.full-top {
     width: 100%;
-    height: 500px;
-    display: flex;
-    background: yellow;
+    height:600px;
+    background: 
+        linear-gradient(rgba(34, 38, 28, 0.5), rgba(0,0,0,0.5)), 
+        url(/img/relate.png) no-repeat center center/cover;
     margin-bottom: 20px;
     color: white;
+    filter: blur(0px); /* blur image if needed */
 }
-
 .full-top h2{
    padding: 200px 0px 0px 500px;
     margin-bottom: 20px;
@@ -91,7 +83,6 @@ a:hover{
     font-size: 1.5em;
     line-height: 1.6;
     margin-bottom: 20px;
-    
 }
 .full-top a{
     color: white;
@@ -102,11 +93,9 @@ a:hover{
 }
 .big-pic{
     flex: 2.5;
-    background-image: url(/img/frtt.png);
      background-size: cover;
     background-position: cover;
 }
-
 .small-pic{
     flex: 1;
     background-image: url(/img/fruis.png);
@@ -117,13 +106,11 @@ a:hover{
     background: #f2ebcb4b;
     height: 30vh;
     margin-bottom: 20px;
-    
 }
 .choose h2{
     /* background: #b85353; */
    padding: 50px 0px 40px 670px;
-   font-size: 2em;
-    
+   font-size: 2em;  
 }
 .btn-ch{
     /* background: goldenrod; */
@@ -131,7 +118,8 @@ a:hover{
     display: flex;
     justify-content: space-evenly;
 }
-.btn-ch button,.ch button{
+.btn-ch button,
+.ch button{
     background: #f6f1ce;
     padding: 12px 64px;
     border-radius:12px;
@@ -139,13 +127,14 @@ a:hover{
     font-size: 1.3em;
      transition: background 0.3s;
 }
-.btn-ch button:hover,.ch button:hover{
+.btn-ch button:hover,
+.ch button:hover{
     background: #f8ecba;
      transform: scale(1.02);
     transition: transform 0.5s;
-
 }
-#card,#sec-card,#thr-card,#for-card{
+#card,#sec-card,
+#thr-card,#for-card{
     background: white;
     height: auto;
     display: flex;
@@ -153,8 +142,10 @@ a:hover{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-#card button:hover,#sec-card button:hover,#thr-card button:hover,#for-card button:hover{
-
+#card button:hover,
+#sec-card button:hover,
+#thr-card button:hover,
+#for-card button:hover{
      transform: scale(1.02);
     transition: transform 0.5s;
 }
@@ -171,16 +162,37 @@ a:hover{
     display: flex;
     flex-direction: column;
     border: none;
-   
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);  /* shadow */
     transition: box-shadow 0.5s ease;        /* smooth hover effect */
 }
-
 .pro-card:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.25); /* deeper shadow on hover */
 }
-
-.pic1,.pic2,.pic3,.pic4,.pic5,.pic6,.pic12,.pic22,.pic32,.pic42,.pic52,.pic62,.pic13,.pic23,.pic33,.pic43,.pic53,.pic53,.pic63,.pic14,.pic24,.pic34,.pic44,.pic54,.pic64{
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic12,
+.pic22,
+.pic32,
+.pic42,
+.pic52,
+.pic62,
+.pic13,
+.pic23,
+.pic33,
+.pic43,
+.pic53,
+.pic53,
+.pic63,
+.pic14,
+.pic24,
+.pic34,
+.pic44,
+.pic54,
+.pic64{
     border-radius: 12px 12px 0px 0px;
     background-size: cover;
     background-position: center;
@@ -221,7 +233,6 @@ a:hover{
 }
 .text h6{
     font-size: 1.3em;
-
 }
 .but-card{
     flex: 1;
@@ -239,7 +250,6 @@ background: #e2df1f;
      transform: scale(1.02);
     transition: transform 0.5s;
 }
-
 .pic12{
     background-image: url(/img/flower1.png);
 }
@@ -275,7 +285,6 @@ background: #e2df1f;
 }
 .pic63{
     background-image: url(/img/sm-jack.png);
-
 }
 .pic14{
     background-image: url(/img/1chek.png);
@@ -302,7 +311,6 @@ background: #e2df1f;
     justify-content: space-evenly;
     margin: 100px;
     display: flex;
-
 }
 .ch button{
     background: rgb(238, 238, 223);
@@ -315,17 +323,13 @@ footer{
     padding: 10px 0;
     margin-top: 20px;
     height: auto;
-   
 }
 .foot-top{
     margin-bottom: 10px;
     font-size: 1em;
     display: flex;
     justify-content: space-evenly;
-
 }
-
-
 footer p{
     margin: 0;
     width: 400px;
@@ -351,7 +355,6 @@ footer p{
     text-decoration: none;
     list-style: none;
 }
-
 .useful a:hover{
     text-decoration: underline;
 }
@@ -364,7 +367,6 @@ footer p{
     margin-bottom: 10px;
 }
 .payment img{
-    
     width: 50px;
     height: auto;
     margin-right: 10px;
