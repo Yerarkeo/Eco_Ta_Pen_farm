@@ -71,11 +71,78 @@ a:hover {
     filter: blur(0px);
     /* blur image if needed */
 }
+.full-top {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Gradient overlay for readability */
+.full-top::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  z-index: 1;
+}
+
+/* Background slideshow using fade + zoom effect */
+.full-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fadeZoom 25s infinite;
+  z-index: 0;
+}
+
+/* Keyframes for fade + zoom */
+@keyframes fadeZoom {
+  0%, 20%   { background-image: url('/img/relate.png'); transform: scale(1); opacity: 1; }
+  20.1%, 40% { background-image: url('/img/take\ care.png'); transform: scale(1.05); opacity: 1; }
+  40.1%, 60% { background-image: url('/img/f-pic.png'); transform: scale(1.05); opacity: 1; }
+  60.1%, 80% { background-image: url('/img/more.png'); transform: scale(1.05); opacity: 1; }
+  80.1%, 100% { background-image: url('/img/photo_2025-08-07_10-55-07.jpg'); transform: scale(1); opacity: 1; }
+}
+
+/* Button style */
+.full-top button {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background: #b5996e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.full-top button a {
+  color: white;
+  text-decoration: none;
+}
+
 .full-top h2 {
-    padding: 200px 0px 0px 500px;
+    padding: 200px 0px 0px 0px;
     margin-bottom: 20px;
     font-size: 3.5em;
 }
+.big-pic {
+  position: relative;
+  z-index: 2; /* ដើម្បីនៅលើ slideshow និង overlay */
+  color: white;
+
+}
+
 .full-top p {
     padding: 100px 0px 0px 1200px;
     font-size: 1.5em;
