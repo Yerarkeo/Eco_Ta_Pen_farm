@@ -1,26 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-header{
+header {
     background: rgba(139, 219, 187, 0.859);
     color: white;
     padding: 10px 0;
     text-align: center;
     display: flex;
 }
-.pic{
+.pic {
     flex: 1;
     text-align: center;
 }
- img{
+img {
     width: 170px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-.link{
+.link {
     flex: 3;
     text-decoration: none;
     color: white;
@@ -29,112 +29,112 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
-nav ul{
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px; 
+    margin-right: 40px;
 }
-nav{
+nav {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    position: fixed;      
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(42, 186, 128, 0.037); 
-    justify-content: flex-end; 
+    background-color: rgba(42, 186, 128, 0.037);
+    justify-content: flex-end;
     padding: 10px 20px;
-    z-index: 1000; 
+    z-index: 1000;
     margin-top: 30px;
-}       
-a{
+}
+a {
     color: black;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
     text-decoration: none;
 }
-a:hover{
+a:hover {
     text-decoration: underline;
 }
-/* main{
-    padding: 20px;
-} */
 .full-top {
     width: 100%;
-    height:600px;
-    background: 
-        linear-gradient(rgba(34, 38, 28, 0.5), rgba(0,0,0,0.5)), 
+    height: 600px;
+    background:
+        linear-gradient(rgba(34, 38, 28, 0.5), rgba(0, 0, 0, 0.5)),
         url(/img/relate.png) no-repeat center center/cover;
     margin-bottom: 20px;
     color: white;
-    filter: blur(0px); /* blur image if needed */
+    filter: blur(0px);
+    /* blur image if needed */
 }
-.full-top h2{
-   padding: 200px 0px 0px 500px;
+.full-top h2 {
+    padding: 200px 0px 0px 500px;
     margin-bottom: 20px;
     font-size: 3.5em;
 }
-.full-top p{
+.full-top p {
     padding: 100px 0px 0px 1200px;
     font-size: 1.5em;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-.full-top a{
+.full-top a {
     color: white;
     text-decoration: none;
 }
-.full-top a:hover{
+.full-top a:hover {
     text-decoration: underline;
 }
-.big-pic{
+.big-pic {
     flex: 2.5;
-     background-size: cover;
+    background-size: cover;
     background-position: cover;
 }
-.small-pic{
+.small-pic {
     flex: 1;
     background-image: url(/img/fruis.png);
     background-size: cover;
     background-position: center;
 }
-.choose{
+.choose {
     background: #f2ebcb4b;
     height: 30vh;
     margin-bottom: 20px;
 }
-.choose h2{
+.choose h2 {
     /* background: #b85353; */
-   padding: 50px 0px 40px 670px;
-   font-size: 2em;  
+    padding: 50px 0px 40px 670px;
+    font-size: 2em;
 }
-.btn-ch{
+.btn-ch {
     /* background: goldenrod; */
     width: auto;
     display: flex;
     justify-content: space-evenly;
 }
 .btn-ch button,
-.ch button{
+.ch button {
     background: #f6f1ce;
     padding: 12px 64px;
-    border-radius:12px;
-    border:none;
+    border-radius: 12px;
+    border: none;
     font-size: 1.3em;
-     transition: background 0.3s;
+    transition: background 0.3s;
 }
 .btn-ch button:hover,
-.ch button:hover{
+.ch button:hover {
     background: #f8ecba;
-     transform: scale(1.02);
+    transform: scale(1.02);
     transition: transform 0.5s;
 }
-#card,#sec-card,
-#thr-card,#for-card{
+#card,
+#sec-card,
+#thr-card,
+#for-card {
     background: white;
     height: auto;
     display: flex;
@@ -145,15 +145,15 @@ a:hover{
 #card button:hover,
 #sec-card button:hover,
 #thr-card button:hover,
-#for-card button:hover{
-     transform: scale(1.02);
+#for-card button:hover {
+    transform: scale(1.02);
     transition: transform 0.5s;
 }
-.but-card a{
+.but-card a {
     font-size: 1em;
     display: inline-block;
 }
-.pro-card{
+.pro-card {
     background: none;
     border-radius: 12px;
     width: 30%;
@@ -162,11 +162,14 @@ a:hover{
     display: flex;
     flex-direction: column;
     border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);  /* shadow */
-    transition: box-shadow 0.5s ease;        /* smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* shadow */
+    transition: box-shadow 0.5s ease;
+    /* smooth hover effect */
 }
 .pro-card:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25); /* deeper shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    /* deeper shadow on hover */
 }
 .pic1,
 .pic2,
@@ -192,38 +195,38 @@ a:hover{
 .pic34,
 .pic44,
 .pic54,
-.pic64{
+.pic64 {
     border-radius: 12px 12px 0px 0px;
     background-size: cover;
     background-position: center;
     flex: 2;
 }
-.pic1{
+.pic1 {
     background-image: url(/img/two.png);
 }
-.pic2{
+.pic2 {
     background-image: url(/img/ba.png);
 }
-.pic3{
+.pic3 {
     background-image: url(/img/PAPA.png);
 }
-.pic4{
+.pic4 {
     background-image: url(/img/table.png);
 }
-.pic5{
-    background-image: url(/img/lemon.png);
+.pic5 {
+  background-image: url(/img/lemon.png);
 }
-.pic6{
+.pic6 {
     background-image: url(/img/RED.png);
 }
-.words{
+.words {
     flex: 1;
-     background: rgb(234, 246, 211);
+    background: rgb(234, 246, 211);
     border-radius: 0px 0px 12px 12px;
     display: flex;
     flex-direction: column;
 }
-.text{
+.text {
     flex: 1;
     background: rgb(234, 246, 211);
     display: flex;
@@ -231,80 +234,80 @@ a:hover{
     font-size: 1.2em;
     justify-content: space-evenly;
 }
-.text h6{
+.text h6 {
     font-size: 1.3em;
 }
-.but-card{
+.but-card {
     flex: 1;
-    background:orange;
+    background: orange;
     width: 40%;
     align-items: center;
-    margin:10px 0px 10px 140px;
+    margin: 10px 0px 10px 140px;
     display: flex;
     justify-content: center;
     border: none;
     border-radius: 12px;
 }
-.but-card:hover{
-background: #e2df1f;
-     transform: scale(1.02);
+.but-card:hover {
+    background: #e2df1f;
+    transform: scale(1.02);
     transition: transform 0.5s;
 }
-.pic12{
+.pic12 {
     background-image: url(/img/flower1.png);
 }
-.pic22{
+.pic22 {
     background-image: url(/img/flower2.png);
 }
-.pic32{
+.pic32 {
     background-image: url(/img/flower4.png);
 }
-.pic42{
+.pic42 {
     background-image: url(/img/flower3.png);
 }
-.pic52{
+.pic52 {
     background-image: url(/img/flow.png);
 }
-.pic62{
+.pic62 {
     background-image: url(/img/flower6.png);
 }
-.pic13{
+.pic13 {
     background-image: url(/img/sm-gar.png);
 }
-.pic23{
+.pic23 {
     background-image: url(/img/sm-banan.png);
 }
-.pic33{
+.pic33 {
     background-image: url(/img/sm-ora.png);
 }
-.pic43{
+.pic43 {
     background-image: url(/img/sm-papa.png);
 }
-.pic53{
+.pic53 {
     background-image: url(/img/gar.png);
 }
-.pic63{
+.pic63 {
     background-image: url(/img/sm-jack.png);
 }
-.pic14{
+.pic14 {
     background-image: url(/img/1chek.png);
 }
-.pic24{
+.pic24 {
     background-image: url(/img/two-check.png);
 }
-.pic34{
+.pic34 {
     background-image: url(/img/tre-check.png);
 }
-.pic44{
+.pic44 {
     background-image: url(/img/for-check.png);
 }
-.pic54{
+.pic54 {
     background-image: url(/img/fiv-check.png);
 }
-.pic64{
+.pic64 {
     background-image: url(/img/six-check.png);
 }
-.ch{
+.ch {
     /* background: yellow; */
     width: auto;
     display: flex;
@@ -312,61 +315,61 @@ background: #e2df1f;
     margin: 100px;
     display: flex;
 }
-.ch button{
+.ch button {
     background: rgb(238, 238, 223);
 }
 /* footer---------------------- */
-footer{
-     background: rgb(42, 186, 129);
+footer {
+    background: rgb(42, 186, 129);
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
     height: auto;
 }
-.foot-top{
+.foot-top {
     margin-bottom: 10px;
     font-size: 1em;
     display: flex;
     justify-content: space-evenly;
 }
-footer p{
+footer p {
     margin: 0;
     width: 400px;
-    padding: 5px ;
+    padding: 5px;
     line-height: 1.6;
 }
-.useful{
+.useful {
     text-align: left;
 }
-.useful h3{
+.useful h3 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.useful ul{
+.useful ul {
     list-style: none;
     padding: 0;
 }
-.useful li{
+.useful li {
     margin-bottom: 10px;
 }
-.useful a{
+.useful a {
     color: white;
     text-decoration: none;
     list-style: none;
 }
-.useful a:hover{
+.useful a:hover {
     text-decoration: underline;
 }
-.payment{
+.payment {
     text-align: left;
     gap: 10px;
 }
-.payment h3{
+.payment h3 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.payment img{
+.payment img {
     width: 50px;
     height: auto;
     margin-right: 10px;
@@ -374,22 +377,22 @@ footer p{
     margin: 10PX;
     border-radius: 20px;
 }
-.payment img:hover{
+.payment img:hover {
     transform: scale(1.1);
     transition: transform 0.3s;
 }
-hr{
+hr {
     border: 1px solid white;
     margin: 10px 0;
 }
-.foot-button{
+.foot-button {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.foot-buttom{
+.foot-buttom {
     margin-top: 10px;
     font-size: 0.9em;
     display: flex;
@@ -398,15 +401,230 @@ hr{
     flex-direction: row;
     gap: 20px;
 }
-.foot-buttom p{
-    width:auto ;
-    padding: 5px ;
+.foot-buttom p {
+    width: auto;
+    padding: 5px;
 }
-.foot-buttom a{
+.foot-buttom a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
 }
-.foot-buttom a:hover{
+.foot-buttom a:hover {
     text-decoration: underline;
+}
+/* * -------- Phone (min-width:320px) and (max-width:767px) --------  */
+@media(min-width:320px) and (max-width:767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        display: flex;
+        height: 40vh;
+    }
+    .pic img {
+        width: 140px;
+    }
+    nav {
+        margin: 80px 0px 0px 0px;
+        align-items: center;
+        padding: 10px 0px 0px 9px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        align-items: center;
+    }
+    .link a {
+        font-size: 1.3em;
+    }
+    .full-top h2 {
+        padding: 200px 0px 0px 10px;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .full-top p {
+        padding: 0px 0px 0px 20px;
+        text-align: center;
+    }
+    .full-top button {
+        margin: 60px 0px 0px 100px;
+    }
+    .choose {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+    .choose h2 {
+        padding: 30px 0px 30px 100px;
+    }
+    .btn-ch {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+        height: 30vh;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .pro-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .but-card {
+        padding: 5px;
+        margin: 10px 0px 20px 90px;
+    }
+    .ch {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .ch button {
+        padding: 10px;
+    }
+    footer {
+        font-size: 1.4em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    footer p {
+        width: 90%;
+        margin-left: 20px;
+    }
+    .foot-top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .foot-top h3 {
+        text-align: center;
+    }
+    .useful {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
+    }
+    .payment {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .foot-buttom {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Teblet(min-width: 768px) and (max-width: 1024px)  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        display: flex;
+        height: 20vh;
+    }
+    .pic img {
+        width: 180px;
+    }
+    nav {
+        margin: 80px 0px 0px 0px;
+        align-items: center;
+        padding: 40px 0px 0px 9px;
+    }
+    nav ul {
+        flex-direction: row;
+        gap: 12px;
+        padding: 0;
+        align-items: center;
+    }
+    .link a {
+        font-size: 1.58em;
+    }
+
+    .full-top h2 {
+        padding: 200px 0px 0px 10px;
+        text-align: center;
+    }
+    .full-top p {
+        padding: 0px 0px 0px 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .full-top button {
+        margin: 60px 0px 0px 100px;
+    }
+    .choose {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+    .choose h2 {
+        padding: 30px 0px 30px 100px;
+    }
+    .btn-ch {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        padding: 24px;
+        height: 10vh;
+        font-size: 1.5em;
+    }
+    .pro-card {
+        width: 40%;
+    }
+    .but-card {
+        padding: 5px;
+        margin: 10px 0px 20px 110px;
+    }
+    .ch {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .ch button {
+        padding: 30px;
+    }
+    footer {
+        font-size: 1.4em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    footer p {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .foot-top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .foot-top h3 {
+        text-align: center;
+    }
+    .useful {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
+    }
+    .payment {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .foot-buttom {
+        display: flex;
+        flex-direction: column;
+    }
 }

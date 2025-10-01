@@ -291,13 +291,13 @@ nav a:hover{
     padding: 32px;
     border-radius: 10px;
     margin: 30px;
-    display: flex;            /* Align items in a row */
-  gap: 16px;                /* Space between items */
-  overflow-x: auto;         /* Enable horizontal scrolling */          /* Optional padding */
-  white-space: nowrap;      /* Prevent items from wrapping */
+    display: flex;           
+  gap: 16px;                
+  overflow-x: auto;        
+  white-space: nowrap;     
 }
 .review::-webkit-scrollbar {
-    height: 8px; /* Height of the scrollbar */
+    height: 8px; 
 }
 .review h2{
    text-align: center;
@@ -443,6 +443,231 @@ hr{
 .foot-buttom a:hover{
     text-decoration: underline;
 }
+
+/* -------- Phone (min-width:320px) and (max-width:767px) -------- */
+ @media(min-width:320px) and (max-width:767px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    height: 40vh;
+  }
+
+  .pic img {
+    width: 120px; /* smaller logo for phone */
+  }
+  nav{
+    margin: 80px 0px 0px 0px;
+    align-items: center;
+    padding: 10px 0px 0px 9px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    align-items: center;
+    
+  }
+
+  .link a {
+    font-size:1.3em;
+  }
+  .full-top h2{
+    padding:170px 0px 0px 10px;
+    text-align: center;
+  }
+  .full-top p{
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+  }
+  .full-top button{
+    margin: 60px 0px 0px 100px;
+  }
+  .owner-mission{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .owner{
+    flex: 1;
+    padding: 40%;
+
+   
+  }
+  .mission{
+    flex: 1;
+  }
+ .but{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+ }
+  .diferent button{
+   padding: 20%;
+   font-size: 1em;
+  }
+  .diferent  a{
+    font-size: 1.1em;
+    padding-left: 40%;
+  }
+  .small-but button{ 
+    padding: 10px;
+  }
+  .two-but{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .two-but button{
+    padding: 40%;
+  }
+  .review button{
+    padding: 10px;
+  }
+  footer {
+     font-size: 1.4em;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+  }
+  footer p{
+    width: 90%;
+    margin-left: 20px;
+  }
+  .foot-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .foot-top h3{
+    text-align: center;
+  }
+  .useful{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    
+  }
+  .payment{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .foot-buttom{
+    display: flex;
+    flex-direction: column;
+  }
+ }
+/* Teblet(min-width: 768px) and (max-width: 1024px)  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    height: 20vh;
+  }
+
+  .pic img {
+    width: 180px; /* smaller logo for phone */
+  }
+  nav{
+    margin: 80px 0px 0px 0px;
+    align-items: center;
+    padding: 40px 0px 0px 9px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 12px;
+    padding: 0;
+    align-items: center;
+    
+  }
+
+  .link a {
+    font-size:1.58em;
+  }
+  .full-top h2{
+    padding:200px 0px 0px 10px;
+    text-align: center;
+  }
+  .full-top p{
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .full-top button{
+    margin: 60px 0px 0px 100px;
+  }
+  .owner-mission{
+    height: 60vh;
+  }
+  .owner{
+    flex: 1;
+  }
+  .mission{
+    flex: 1.5;
+  }
+  .diferent button{
+   padding: 12%;
+   font-size: 1em;
+  }
+  .diferent  a{
+    font-size: 1.1em;
+  }
+  .small-but button{ 
+    padding: 10px;
+  }
+  .two-but{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .two-but button{
+    width: 100%;
+  }
+  footer {
+     font-size: 1.4em;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+  }
+  footer p{
+    width: 90%;
+    margin-left: 20px;
+  }
+  .foot-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .foot-top h3{
+    text-align: center;
+  }
+  .useful{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    
+  }
+  .payment{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .foot-buttom{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 
 
