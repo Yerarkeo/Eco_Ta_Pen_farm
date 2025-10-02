@@ -37,19 +37,16 @@ nav ul{
     margin-right: 40px;
 }
 nav{
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    position: fixed;      
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(42, 186, 128, 0.037); 
     justify-content: flex-end; 
     padding: 10px 20px;
-    z-index: 1000; 
-    margin-top: 30px; 
- }       
+  
+ }        
 nav a{
     color: black;
     text-decoration: none;
@@ -95,9 +92,8 @@ nav a:hover{
 
 @keyframes slideShow {
   0%   { background-image: url('/img/le.png'); right: -100%; }
-  20%  { background-image: url('/img/chickens.png'); right: 0; }
-  60%  { background-image: url('/img/plant-papa.png'); right: 0; }
-  80%  { background-image: url('/img/fruis.png'); right: 0; }
+  30%  { background-image: url('/img/chickens.png'); right: 0; }
+  70%  { background-image: url('/img/plant-papa.png'); right: 0; }
   100% { background-image: url('/img/le.png'); right: -100%; }
 }
 
@@ -329,49 +325,61 @@ nav a:hover{
     background-size: cover;
     background-position: center;
 }
-.review{
-    background: rgb(241, 244, 241);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 32px;
-    border-radius: 10px;
-    margin: 30px;
-    display: flex;           
-  gap: 16px;                
-  overflow-x: auto;        
-  white-space: nowrap;     
-}
-.review::-webkit-scrollbar {
-    height: 8px; 
-}
-.review h2{
-   text-align: center;
-    margin-bottom: 20px;  
-}
-.review button p{
+.review {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    width: 20%;
+    padding: 40px 20px;
+    background: #f8f8f8;
 }
-.review button{
+
+.review h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.review-list {
+    display: flex;              /* use flexbox instead of grid */
+    gap: 20px;
+    overflow-x: auto;           /* enable horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.review-card {
+    flex: 0 0 280px;            /* card width */
+    background: rgb(249, 236, 186);
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    padding: 32px;
-    background: rgb(219, 159, 70);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px; 
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    scroll-snap-align: start;   /* snap effect */
 }
-.review button:hover{
-    background: rgb(202, 207, 144);
-     transform: scale(1.02);
-    transition: transform 0.5s;
+
+.review-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-.review p{
-    margin-bottom: 20px;
-    width: 50%;
+
+.review-text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
 }
+
+.review-text p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* optional: hide scrollbar but keep scroll */
+.review-list::-webkit-scrollbar {
+    display: none;
+}
+
 .small-but{
     text-align: center;
     margin-top: 20px;
@@ -501,20 +509,18 @@ hr{
   .pic img {
     width: 120px; /* smaller logo for phone */
   }
-  nav{
-    margin: 80px 0px 0px 0px;
+ nav {
     align-items: center;
-    padding: 10px 0px 0px 9px;
+    padding: 5px 0px 0px 9px;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     padding: 0;
     align-items: center;
-    
-  }
 
+  }
   .link a {
     font-size:1.3em;
   }
@@ -619,15 +625,14 @@ hr{
   .pic img {
     width: 180px; /* smaller logo for phone */
   }
-  nav{
-    margin: 80px 0px 0px 0px;
+   nav{
     align-items: center;
-    padding: 40px 0px 0px 9px;
+    padding: 5px 0px 0px 9px;
   }
 
   nav ul {
     flex-direction: row;
-    gap: 12px;
+    gap: 10px;
     padding: 0;
     align-items: center;
     

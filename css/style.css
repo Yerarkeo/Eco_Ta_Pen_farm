@@ -1,77 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-header{
-    background: rgba(139, 219, 187, 0.859);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
+
+header {
+  background: rgba(139, 219, 187, 0.859);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
 }
-.pic{
-    flex: 1;
-    text-align: center; 
+
+.pic {
+  flex: 1;
+  text-align: center;
 }
- img{
-    width: 170px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+
+img {
+  width: 170px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-.link{
-    flex: 3;
-    text-decoration: none;
-    color: white;
-    /* background: #c37575; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+
+.link {
+  flex: 3;
+  text-decoration: none;
+  color: white;
+  /* background: #c37575; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-nav ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
 }
-nav{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    position: fixed;      
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(42, 186, 128, 0.037); 
-    justify-content: flex-end; 
-    padding: 10px 20px;
-    z-index: 1000; 
-    margin-top: 30px; 
- }       
-nav a{
-    color: black;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    text-decoration: none;  
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: rgba(244, 246, 245, 0.037);
+  justify-content: flex-end;
+  padding: 10px 20px;
+  z-index: 1000;
 }
-nav a:hover{
-    text-decoration: underline;
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  text-decoration: none;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 /* main{
     padding: 20px;
 } */
 .full-top {
-    width: 100%;
-    height: 600px;
-    background: 
-        linear-gradient(rgba(181, 153, 110, 0.5), rgba(0,0,0,0.5)), 
-        url(/img/table.png) no-repeat center center/cover;
-    margin-bottom: 20px;
-    color: white;
-    filter: blur(0px); /* blur image if needed */
+  width: 100%;
+  height: 600px;
+  background:
+    linear-gradient(rgba(181, 153, 110, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/table.png) no-repeat center center/cover;
+  margin-bottom: 20px;
+  color: white;
+  filter: blur(0px);
+  /* blur image if needed */
 }
 
 /* ---------------------------------------------------------- */
@@ -92,7 +99,10 @@ nav a:hover{
 .full-top::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   background-position: center;
   animation: slideShow 25s infinite;
@@ -103,19 +113,49 @@ nav a:hover{
 .full-top::after {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
   z-index: -1;
 }
 
 @keyframes slideShow {
-  0%   { background-image: url('/img/table.png'); right: -100%; }
-  10%  { background-image: url('/img/lightjack.png'); right: 0; }
-  20%  { background-image: url('/img/flower3.png'); right: 0; }
-  40%  { background-image: url('/img/yellow\ banana.png'); right: 0; }
-  60%  { background-image: url('/img/lemon.png'); right: 0; }
-  80%  { background-image: url('/img/full\ papa.png'); right: 0; }
-  100% { background-image: url('/img/table.png'); right: -100%; }
+  0% {
+    background-image: url('/img/table.png');
+    right: -100%;
+  }
+
+  10% {
+    background-image: url('/img/lightjack.png');
+    right: 0;
+  }
+
+  20% {
+    background-image: url('/img/flower3.png');
+    right: 0;
+  }
+
+  40% {
+    background-image: url('/img/yellow\ banana.png');
+    right: 0;
+  }
+
+  60% {
+    background-image: url('/img/lemon.png');
+    right: 0;
+  }
+
+  80% {
+    background-image: url('/img/full\ papa.png');
+    right: 0;
+  }
+
+  100% {
+    background-image: url('/img/table.png');
+    right: -100%;
+  }
 }
 
 /* Button style */
@@ -134,140 +174,170 @@ nav a:hover{
   text-decoration: none;
 }
 
-.full-top h2{
-   padding: 100px 0px 0px 100px;
-    margin-bottom: 20px;
-    font-size: 3em;
-}
-.full-top p{
-    padding: 0px 0px 0px 100px;
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-.full-top button{
-    background: #dd7a1e;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    margin-left: 100px;
-    border-radius: 8px;
-    display: block; /* Makes button full-width */
-    width: 100%; /* Fills container */
-    max-width: 200px; /* Limits button width */
-    padding: 12px; /* Adjusted padding */
-    transition: background 0.3s ease,
-    transform 0.3s ease; /* Smooth transitions */
-}
-.full-top button a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 6px;
-    border-radius: 24px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: block; /* Ensures link fills button */
-}
-.full-top button a:hover{
-    opacity: 0.8;
-}
-.full-top button:hover{
-    background: #79d779;
-    transform: scale(1.02);
-    transition: transform 0.5s;
-}
-.quote{
-     background: #d4efe6;
-    color: rgb(10, 14, 8);
-    text-align: center;
-    padding: 20px 20px;
-    margin: 0px 20px 0px 20px;
-    
-    margin-top: 60px;
-    position: relative;
-}
-.quote p{
-    font-style: italic;
-    font-size: 1em;
-}
-.four-btn{
-    display: flex;
-    justify-content: space-around;
-    margin: 60px 20px 50px 20px;
-}
-.four-btn button{
-    padding: 120px 150px;
-    /* background: #008000; */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 8px;
-    transition: background 0.3s;
-}
-.first{
-    background: url(/img/f.png) no-repeat center center/cover;
-}
-.first:hover{
-    background-image: url(/img/ff-pic.png);
-    transform: scale(1.02);
-    transition: transform 0.5s;
-}
-.second:hover{
-    background-image: url(/img/pa.png);
-    transform: scale(1.02);
-    transition: transform 0.5s;
-}
-.third:hover{
-    background-image: url(/img/bana.png);
-    transform: scale(1.02);
-    transition: transform 0.5s;
-}
-.fourth:hover{
-    background-image: url(/img/le.png);
-    transform: scale(1.02);
-    transition: transform 0.5s;
+.full-top h2 {
+  padding: 100px 0px 0px 100px;
+  margin-bottom: 20px;
+  font-size: 3em;
 }
 
-.first a,.second a,.third a{  
-    font-weight: bold; 
+.full-top p {
+  padding: 0px 0px 0px 100px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
-.second{
-    background: url(/img/PAPA.png) no-repeat center center/cover;
+
+.full-top button {
+  background: #dd7a1e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 100px;
+  border-radius: 8px;
+  display: block;
+  /* Makes button full-width */
+  width: 100%;
+  /* Fills container */
+  max-width: 200px;
+  /* Limits button width */
+  padding: 12px;
+  /* Adjusted padding */
+  transition: background 0.3s ease,
+    transform 0.3s ease;
+  /* Smooth transitions */
 }
-.third{
-    background: url(/img/ba.png) no-repeat center center/cover;
+
+.full-top button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: block;
+  /* Ensures link fills button */
 }
-.fourth{
-    background: url(/img/lemon.png) no-repeat center center/cover;
+
+.full-top button a:hover {
+  opacity: 0.8;
 }
-.four-btn button a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+
+.full-top button:hover {
+  background: #79d779;
+  transform: scale(1.02);
+  transition: transform 0.5s;
 }
-.info{
-    text-align: center;
-    /* padding: 120px; */
-   margin: 0px 20px 60px 20px;
-    /* background: #d38282; */
-    display: flex;
+
+.quote {
+  background: #d4efe6;
+  color: rgb(10, 14, 8);
+  text-align: center;
+  padding: 20px 20px;
+  margin: 0px 20px 0px 20px;
+
+  margin-top: 60px;
+  position: relative;
 }
-.info p{
-    font-size: 1.2em;
-    line-height: 1.6;
+
+.quote p {
+  font-style: italic;
+  font-size: 1em;
 }
-.one{
-    flex: 1;
-    background-image: url(/img/ii.png);
-    background-size: cover;
-    background-position: center;
-    height: 350px; 
+
+.four-btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 20px 50px 20px;
 }
+
+.four-btn button {
+  padding: 120px 150px;
+  /* background: #008000; */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.first {
+  background: url(/img/f.png) no-repeat center center/cover;
+}
+
+.first:hover {
+  background-image: url(/img/ff-pic.png);
+  transform: scale(1.02);
+  transition: transform 0.5s;
+}
+
+.second:hover {
+  background-image: url(/img/pa.png);
+  transform: scale(1.02);
+  transition: transform 0.5s;
+}
+
+.third:hover {
+  background-image: url(/img/bana.png);
+  transform: scale(1.02);
+  transition: transform 0.5s;
+}
+
+.fourth:hover {
+  background-image: url(/img/le.png);
+  transform: scale(1.02);
+  transition: transform 0.5s;
+}
+
+.first a,
+.second a,
+.third a {
+  font-weight: bold;
+}
+
+.second {
+  background: url(/img/PAPA.png) no-repeat center center/cover;
+}
+
+.third {
+  background: url(/img/ba.png) no-repeat center center/cover;
+}
+
+.fourth {
+  background: url(/img/lemon.png) no-repeat center center/cover;
+}
+
+.four-btn button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.info {
+  text-align: center;
+  /* padding: 120px; */
+  margin: 0px 20px 60px 20px;
+  /* background: #d38282; */
+  display: flex;
+}
+
+.info p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.one {
+  flex: 1;
+  background-image: url(/img/ii.png);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
 /* two-------------------------- */
 .two {
   flex: 2;
@@ -276,8 +346,10 @@ nav a:hover{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  overflow: hidden; /* prevent blur overflow */
+  overflow: hidden;
+  /* prevent blur overflow */
 }
+
 .two::before {
   content: "";
   position: absolute;
@@ -288,217 +360,263 @@ nav a:hover{
   background-image: url(/img/photo_2025-04-06_22-55-13.jpg);
   background-size: cover;
   background-position: center;
-  filter: blur(5px); 
-  z-index: -1; 
+  filter: blur(5px);
+  z-index: -1;
 }
+
 .two .content {
   position: relative;
-  z-index: 1; 
-  color: white; 
+  z-index: 1;
+  color: white;
 }
-.two p{
-    color: white;
-    padding: 100px 50px 100px 50px;
-    text-align: left;
-    font-size: 1.2em;
+
+.two p {
+  color: white;
+  padding: 100px 50px 100px 50px;
+  text-align: left;
+  font-size: 1.2em;
 }
-.two button{
-    padding: 12px 64px;
-    background: #e2bd34;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 0.9em;
-    margin: auto 100px 50px 0px;
-    border-radius: 8px;
-    transition: background 0.3s;
-    display: block; /* Makes button full-width */
-    width: 100%; /* Fills container */
-    max-width: 200px; /* Limits button width */
-    padding: 12px; /* Adjusted padding */
-    transform 0.3s ease; /* Smooth transitions */
+
+.two button {
+  padding: 12px 64px;
+  background: #e2bd34;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin: auto 100px 50px 0px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  display: block;
+  /* Makes button full-width */
+  width: 100%;
+  /* Fills container */
+  max-width: 200px;
+  /* Limits button width */
+  padding: 12px;
+  /* Adjusted padding */
+  transform 0.3s ease;
+  /* Smooth transitions */
 }
-.two button a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-   padding: 6px;
-    border-radius: 24px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: block; /* Ensures link fills button */
+
+.two button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: block;
+  /* Ensures link fills button */
 }
-.two button:hover{
-    background: #8de98d;
-    transform: scale(1.02);
-    transition: transform 0.5s;
+
+.two button:hover {
+  background: #8de98d;
+  transform: scale(1.02);
+  transition: transform 0.5s;
 }
-.two button a:hover{
-    opacity: 0.8;
+
+.two button a:hover {
+  opacity: 0.8;
 }
-.three-btn{
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0px 50px 0px;
+
+.three-btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 50px 0px;
 }
-.three-btn button{
-    padding: 120px 40px;
-    /* background: #008000; */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 8px;
-    transition: background 0.3s;
+
+.three-btn button {
+  padding: 120px 40px;
+  /* background: #008000; */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
-.three-btn button:hover{
-    /* background: #79d779; */
-    transform: scale(1.02);
-    transition: transform 0.5s;
+
+.three-btn button:hover {
+  /* background: #79d779; */
+  transform: scale(1.02);
+  transition: transform 0.5s;
 }
-.three-btn button p{
-    font-weight: bold;
-    padding: 0 20px;
-    line-height: 1.6;
+
+.three-btn button p {
+  font-weight: bold;
+  padding: 0 20px;
+  line-height: 1.6;
 }
+
 .btn1 {
-    background: url(/img/any.png) no-repeat center center/cover;
+  background: url(/img/any.png) no-repeat center center/cover;
 }
+
 .hover-box {
   position: relative;
   display: inline-block;
   padding: 20px 190px;
-  width:auto ;
+  width: auto;
   cursor: pointer;
 }
+
 .hover-text {
-  display: none; /* hidden by default */
+  display: none;
+  /* hidden by default */
   position: absolute;
   color: white;
   border-radius: 4px;
   width: 120%;
   height: 39vh;
   font-size: 1.1em;
- margin-top: 20;
+  margin-top: 20;
 }
+
 .hover-box:hover .hover-text {
-  display: block; /* show on hover */
+  display: block;
+  /* show on hover */
   transform: translate(-50%, -50%);
-  background: rgba(142, 140, 140, 0.6); /* semi-transparent background */
+  background: rgba(142, 140, 140, 0.6);
+  /* semi-transparent background */
   text-align: center;
 }
-.act h1{
-    font-size: 2em;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    text-align: center;
+
+.act h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
 }
-.btn2{
-    background: url(/img/care.png) no-repeat center center/cover;
+
+.btn2 {
+  background: url(/img/care.png) no-repeat center center/cover;
 }
-.btn3{
-    background: url(/img/service.png) no-repeat center center/cover;
+
+.btn3 {
+  background: url(/img/service.png) no-repeat center center/cover;
 }
+
 /* footer---------------------------------- */
-footer{
-     background: rgb(42, 186, 129);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    height: auto;
+footer {
+  background: rgb(42, 186, 129);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  height: auto;
 }
-.foot-top{
-    margin-bottom: 10px;
-    font-size: 1em;
-    display: flex;
-    justify-content: space-evenly;
+
+.foot-top {
+  margin-bottom: 10px;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-evenly;
 }
-footer p{
-    margin: 0;
-    width: 400px;
-    padding: 5px ;
-    line-height: 1.6;
+
+footer p {
+  margin: 0;
+  width: 400px;
+  padding: 5px;
+  line-height: 1.6;
 }
-.useful{
-    text-align: left;
+
+.useful {
+  text-align: left;
 }
-.useful h3{
-    margin-top: 30px;
-    margin-bottom: 10px;
+
+.useful h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-.useful ul{
-    list-style: none;
-    padding: 0;
+
+.useful ul {
+  list-style: none;
+  padding: 0;
 }
-.useful li{
-    margin-bottom: 10px;
+
+.useful li {
+  margin-bottom: 10px;
 }
-.useful a{
-    color: white;
-    text-decoration: none;
-    list-style: none;
+
+.useful a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
 }
-.useful a:hover{
-    text-decoration: underline;
+
+.useful a:hover {
+  text-decoration: underline;
 }
-.payment{
-    text-align: left;
-    gap: 10px;
+
+.payment {
+  text-align: left;
+  gap: 10px;
 }
-.payment h3{
-    margin-top: 30px;
-    margin-bottom: 10px;
+
+.payment h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-.payment img{
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-    display: flex;
-    margin: 10PX;
-    border-radius: 20px;
+
+.payment img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  display: flex;
+  margin: 10PX;
+  border-radius: 20px;
 }
-.payment img:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s;
+
+.payment img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
-hr{
-    border: 1px solid white;
-    margin: 10px 0;
+
+hr {
+  border: 1px solid white;
+  margin: 10px 0;
 }
-.foot-button{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+
+.foot-button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.foot-buttom{
-    margin-top: 10px;
-    font-size: 0.9em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
+
+.foot-buttom {
+  margin-top: 10px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
-.foot-buttom p{
-    width:auto ;
-    padding: 5px ;
+
+.foot-buttom p {
+  width: auto;
+  padding: 5px;
 }
-.foot-buttom a{
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+
+.foot-buttom a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
-.foot-buttom a:hover{
-    text-decoration: underline;
+
+.foot-buttom a:hover {
+  text-decoration: underline;
 }
+
 /* -------- Phone (min-width:320px) and (max-width:767px) -------- */
 @media(min-width:320px) and (max-width:767px) {
-header {
+  header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
@@ -507,128 +625,150 @@ header {
   }
 
   .pic img {
-    width: 120px; /* smaller logo for phone */
+    width: 120px;
+    /* smaller logo for phone */
   }
-  nav{
-    margin: 80px 0px 0px 0px;
+
+  nav {
     align-items: center;
-    padding: 10px 0px 0px 9px;
+    padding: 5px 0px 0px 9px;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     padding: 0;
     align-items: center;
-    
+
   }
 
   .link a {
-    font-size:1.3em;
+    font-size: 1.3em;
   }
-  .full-top h2{
+
+  .full-top h2 {
     padding: 50px 0px 0px 10px;
     text-align: center;
   }
-  .full-top p{
+
+  .full-top p {
     padding: 0px 0px 0px 20px;
     text-align: center;
   }
-  .full-top button{
+
+  .full-top button {
     margin: 60px 0px 0px 100px;
   }
-  .four-btn{
+
+  .four-btn {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
   }
-  .four-btn button{
+
+  .four-btn button {
     text-align: center;
   }
-  .info{
+
+  .info {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 20px;
     height: 90vh;
     border-radius: 12px;
   }
-  .one{
+
+  .one {
     flex: 1;
     border-radius: 12px;
   }
-  .two{
+
+  .two {
     flex: 2;
     border-radius: 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .info p{
+
+  .info p {
     font-size: 1.1em;
     width: 90%;
     text-align: center;
-    
+
   }
-  .info button{
+
+  .info button {
     align-items: center;
     margin: 0px 0px 40px 0px;
   }
-  .three-btn{
+
+  .three-btn {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .three-btn button{
-    padding: 90px 0px ;
-    margin: 0px 0px 0px 20px ;
+
+  .three-btn button {
+    padding: 90px 0px;
+    margin: 0px 0px 0px 20px;
     width: 90%;
   }
-  .hover-box span{
-     text-align: center;
-     font-size: 0.9em;
-     width:70%;
-     height: 30vh;
-     padding: 0px 50px 0px 0px ;
-     
+
+  .hover-box span {
+    text-align: center;
+    font-size: 0.9em;
+    width: 70%;
+    height: 30vh;
+    padding: 0px 50px 0px 0px;
+
   }
+
   footer {
-     font-size: 1em;
-     text-align: center;
-     display: flex;
-     flex-direction: column;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
-  footer p{
+
+  footer p {
     width: 90%;
   }
-  .foot-top{
+
+  .foot-top {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .foot-top h3{
+
+  .foot-top h3 {
     text-align: center;
   }
-  .useful{
+
+  .useful {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 1em;
-    
+
   }
-  .payment{
+
+  .payment {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-  .foot-buttom{
+
+  .foot-buttom {
     display: flex;
     flex-direction: column;
   }
 }
+
 /* Teblet(min-width: 768px) and (max-width: 1024px)  */
 @media (min-width: 768px) and (max-width: 1024px) {
-    header {
+  header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
@@ -637,127 +777,146 @@ header {
   }
 
   .pic img {
-    width: 150px; /* smaller logo for phone */
+    width: 150px;
+    /* smaller logo for phone */
   }
-  nav{
-    margin: 80px 0px 0px 0px;
+
+  nav {
     align-items: center;
-    padding: 40px 0px 0px 9px;
+    padding: 5px 0px 0px 9px;
   }
 
   nav ul {
     flex-direction: row;
-    gap: 12px;
+    gap: 10px;
     padding: 0;
     align-items: center;
-    
+
   }
 
   .link a {
-    font-size:1.5em;
+    font-size: 1.5em;
   }
-  .full-top h2{
+
+  .full-top h2 {
     padding: 50px 0px 0px 10px;
     text-align: center;
   }
-  .full-top p{
+
+  .full-top p {
     padding: 0px 0px 0px 20px;
     text-align: center;
     font-size: 1.5em;
   }
-  .full-top button{
+
+  .full-top button {
     margin: 60px 0px 0px 100px;
   }
-  .four-btn{
+
+  .four-btn {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
   }
-  .four-btn button{
+
+  .four-btn button {
     text-align: center;
   }
-  .info{
+
+  .info {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 20px;
     height: 90vh;
     border-radius: 12px;
   }
-  .one{
+
+  .one {
     flex: 1;
     border-radius: 12px;
   }
-  .two{
+
+  .two {
     flex: 2;
     border-radius: 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .info p{
+
+  .info p {
     font-size: 1.1em;
     width: 90%;
     text-align: center;
-    
+
   }
-  .info button{
+
+  .info button {
     align-items: center;
     margin: 0px 0px 40px 0px;
   }
-  .three-btn{
+
+  .three-btn {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .three-btn button{
-    padding: 90px 0px ;
-    margin: 0px 0px 0px 20px ;
+
+  .three-btn button {
+    padding: 90px 0px;
+    margin: 0px 0px 0px 20px;
     width: 95%;
   }
-  .hover-box span{
-     text-align: center;
-     font-size: 0.9em;
-     width:70%;
-     height: 30vh;
-     padding: 0px 50px 0px 0px ;
-     
+
+  .hover-box span {
+    text-align: center;
+    font-size: 0.9em;
+    width: 70%;
+    height: 30vh;
+    padding: 0px 50px 0px 0px;
+
   }
+
   footer {
-     font-size: 1.4em;
-     text-align: center;
-     display: flex;
-     flex-direction: column;
+    font-size: 1.4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
-  footer p{
+
+  footer p {
     width: 90%;
     margin-left: 20px;
   }
-  .foot-top{
+
+  .foot-top {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .foot-top h3{
+
+  .foot-top h3 {
     text-align: center;
   }
-  .useful{
+
+  .useful {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 1em;
-    
+
   }
-  .payment{
+
+  .payment {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-  .foot-buttom{
+
+  .foot-buttom {
     display: flex;
     flex-direction: column;
   }
 }
-
-
